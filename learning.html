@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="learning.css">
+</head>
+<body>
+  <header>
+    <h1>Online Learning Platform</h1>
+    <nav>
+      <button id="viewCoursesBtn">View Courses</button>
+      <button id="createCourseBtn">Create Course</button>
+      <button id="viewProgressBtn">View Progress</button>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- View Courses -->
+    <section id="viewCoursesSection" class="hidden">
+      <h2>Available Courses</h2>
+      <ul id="courseList"></ul>
+    </section>
+    
+    <!-- Create Course -->
+    <section id="createCourseSection" class="hidden">
+      <h2>Create a New Course</h2>
+      <form id="createCourseForm">
+        <label for="courseTitle">Title:</label>
+        <input type="text" id="courseTitle" required>
+        <label for="courseDescription">Description:</label>
+        <textarea id="courseDescription" required></textarea>
+        <button type="submit">Create Course</button>
+      </form>
+    </section>
+    
+    <!-- View Progress -->
+    <section id="viewProgressSection" class="hidden">
+      <h2>Your Progress</h2>
+      <ul id="progressList"></ul>
+    </section>
+  </main>
+  
+  <script src="learning.js"></script>
+</body>
+</html>
